@@ -1,5 +1,5 @@
-.mxproject
-.jdebug
-.jdebug.user
-.ioc
+**.mxproject
+**.jdebug
+**.jdebug.user
+**.ioc
 build/
