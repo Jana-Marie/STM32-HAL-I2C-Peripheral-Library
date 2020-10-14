@@ -1,0 +1,4 @@
+*/*.jdebug
+*/*.jdebug.user
+*/*.ioc
+*/build
