@@ -1,4 +1,5 @@
-*/*.jdebug
-*/*.jdebug.user
-*/*.ioc
-*/build
+*.mxproject
+*.jdebug
+*.jdebug.user
+*.ioc
+build/
