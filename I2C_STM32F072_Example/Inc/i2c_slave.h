@@ -18,9 +18,8 @@ struct i2c_slave_data_t{
   enum State transferState;
   uint8_t registerAddress;
   uint8_t receiveBuffer;
+  uint8_t i2c_memory[0xFF];
 }i2c_data;
-
-static uint8_t i2c_memory[0xFF] = { 0 };
 
 void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c);
 void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef *hi2c);
