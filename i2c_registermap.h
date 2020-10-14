@@ -3,7 +3,7 @@
 
 // Example map
 
-#define NULL 0x00
+#define DUMMY 0x00
 
 #define CHIPID  0x01
 #define REG1    0x0A
