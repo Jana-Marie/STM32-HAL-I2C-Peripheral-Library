@@ -12,4 +12,6 @@
 #define REG4    0x0D
 #define REG5    0x0E
 
+#define LASTREG 0xFF
+
 #endif
