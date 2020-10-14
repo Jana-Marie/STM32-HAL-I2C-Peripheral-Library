@@ -21,3 +21,9 @@ The interface can be started via
 ```
 I2C_Slave_Init(&i2c_init);
 ```
+
+### Usage
+
+Todo:
+
+ - [ ] Improve register mapping
