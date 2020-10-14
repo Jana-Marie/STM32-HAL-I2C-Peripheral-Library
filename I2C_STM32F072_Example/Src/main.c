@@ -1,5 +1,6 @@
 #include "main.h"
 #include "i2c_slave.h"
+#include "i2c_registermap.h"
 
 I2C_HandleTypeDef hi2c1;
 
