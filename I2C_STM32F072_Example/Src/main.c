@@ -8,7 +8,10 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 
+// Set up library with hi2c1 interface and Error_Handler();
 i2c_slave_init_t i2c_init = {.hi2c = &hi2c1, .error_handler = Error_Handler};
+
+uint8_t x,y;
 
 int main(void)
 {
@@ -17,11 +20,19 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
 
+  // initialise library
   I2C_Slave_Init(&i2c_init);
+
+  // Write 42 into ChipId register, so it can be accessed via I2C
+  I2C_Set_Register(CHIPID, 42);
 
   while (1)
   {
+    // Write x into REG1 register and read from REG2 into y
+    I2C_Set_Register(REG1, x++);
+    y = I2C_Get_Register(REG2);
 
+    HAL_Delay(100);
   }
 }
 
