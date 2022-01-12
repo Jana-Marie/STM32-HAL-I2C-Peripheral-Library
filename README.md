@@ -1,11 +1,11 @@
 # STM32_I2C_Slave_Example
 
-This repo contains a simple library and an example to use a STM as I2C slave. It allows you to define a register map with auto-incremental read and write requests.
+This repo contains a simple library and an example to use a STM as I2C peripheral (deprecated term: „slave“). It allows you to define a register map with auto-incremental read and write requests.
 
 
 ### Usage
 
-Before you include and set up the library as below, the I2S peripheral has to be configured (e.g. via CubeMX). This is not covered here.
+Before you include and set up the library as below, the I2S hardware peripheral has to be configured (e.g. via CubeMX). This is not covered here.
 
 ```
 #include "i2c_slave.h"
@@ -24,4 +24,5 @@ I2C_Slave_Init(&i2c_init);
 
 ### Todo
 
+ - [ ] Remove deprecated „slave“ term!
  - [ ] Improve register mapping
